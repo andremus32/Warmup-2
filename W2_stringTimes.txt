@@ -1,0 +1,8 @@
+//Warmup-2 > stringTimes 
+public String stringTimes(String str, int n) {
+  String nStr = "";
+  for(int i = 0; i < n; i++){
+    nStr += str;
+  }
+  return nStr;
+}

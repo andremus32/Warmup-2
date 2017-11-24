@@ -1,0 +1,334 @@
+//Warmup-1 > sleepIn 
+public boolean sleepIn(boolean weekday, boolean vacation) {
+  boolean check = false;
+  if (!weekday || vacation){
+    check = true;
+  }
+  return check;
+}
+
+//Warmup-1 > monkeyTrouble 
+public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+  if ((aSmile && bSmile) || (!aSmile && !bSmile)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > sumDouble 
+public int sumDouble(int a, int b) {
+  if (a == b){
+    return (a+b)*2;
+  }
+  else return a+b;
+}
+
+//Warmup-1 > diff21 
+public int diff21(int n) {
+  int x = 21 - n;
+  if (x >= 0){
+    return x;
+  }
+  else {
+    return -x * 2;
+  }
+}
+
+//Warmup-1 > parrotTrouble 
+public boolean parrotTrouble(boolean talking, int hour) {
+  if (talking && (hour < 7 || hour > 20)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > makes10 
+public boolean makes10(int a, int b) {
+  if (a == 10 || b == 10 || (a+b) == 10){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > nearHundred 
+public boolean nearHundred(int n) {
+  if ((n >= 90 && n <= 110) || (n >= 190 && n <= 210)){
+    return true;
+  }
+  else return false;
+  
+}
+
+//Warmup-1 > posNeg 
+public boolean posNeg(int a, int b, boolean negative) {
+  if (((a > 0 && b < 0) || (a < 0 && b > 0)) && !negative){
+    return true;
+  } 
+  else if ((a < 0 && b < 0) && negative){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > notString 
+public String notString(String str) {
+  if (str.length() > 2){
+  String notString = "not";
+  String checkString = str.substring(0,3);
+  if (notString.equals(checkString)){
+    return str;
+  }
+  else return "not "+str;
+  }
+  else return "not "+str;
+}
+
+//Warmup-1 > missingChar 
+public String missingChar(String str, int n) {
+  if (n > 0){
+    String beginLine = str.substring(0, n);
+    String endLine = str.substring(n+1);
+    return beginLine + endLine;
+  }
+  else return str.substring(1);
+}
+
+//Warmup-1 > frontBack 
+public String frontBack(String str) {
+  if (str.length() > 1){
+  char[] fromString = str.toCharArray();
+  String nStr = str.substring(1,str.length()-1);
+  return fromString[fromString.length-1]+nStr+fromString[0];
+  }
+  else return str;
+}
+
+//Warmup-1 > front3 
+public String front3(String str) {
+  char[] arrStr = str.toCharArray();
+  if (arrStr.length < 3){
+    return str+str+str;
+  }
+  else {
+    String nStr = str.substring(0,3);
+    return nStr+nStr+nStr;
+  }
+}
+
+//Warmup-1 > backAround 
+public String backAround(String str) {
+  String lastLetter = str.substring(str.length()-1);
+  return lastLetter + str + lastLetter;
+}
+
+//Warmup-1 > or35
+public boolean or35(int n) {
+  if((n%3 == 0) || (n%5 == 0)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > front22 
+public String front22(String str) {
+  if (str.length() > 1){
+    String subStr = str.substring(0,2);
+    return subStr + str + subStr;
+  }
+  else return str + str + str;
+}
+
+//Warmup-1 > startHi 
+public boolean startHi(String str) {
+  if (str.length() > 1){
+  char firstLetter = 'h';
+  char secondLetter = 'i';
+  if (firstLetter == str.charAt(0) && secondLetter == str.charAt(1)){
+    return true;
+  }
+  else return false;
+  }
+  else return false;
+}
+
+//Warmup-1 > icyHot 
+public boolean icyHot(int temp1, int temp2) {
+  if ((temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > in1020 
+public boolean in1020(int a, int b) {
+  if ((a >= 10 && a <= 20) || (b >= 10 && b <= 20)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > hasTeen 
+public boolean hasTeen(int a, int b, int c) {
+  if ((a >= 13 && a <= 19) || (b >= 13 && b <= 19) || (c >= 13 && c <= 19)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > loneTeen 
+public boolean loneTeen(int a, int b) {
+  if ((a >= 13 && a <= 19) ^ (b >= 13 && b <= 19)){
+    return true;
+  }
+  else return false;
+}
+
+//Warmup-1 > delDel 
+public String delDel(String str) {
+  if (str.length() > 3){
+    String subStr = str.substring(1,4);
+    String checkStr = "del";
+    if (checkStr.equals(subStr)){
+      return str.substring(0,1)+str.substring(4);
+    }
+    else return str;
+  }
+  else return str;
+}
+
+//Warmup-1 > mixStart 
+public boolean mixStart(String str) {
+  if (str.length() > 2){
+  char secondLetter = 'i';
+  char thirdLetter = 'x';
+  if ((str.charAt(1) == secondLetter) && (str.charAt(2) == thirdLetter)){
+    return true;
+  }
+  else return false;
+  }
+  else return false;
+}
+
+//Warmup-1 > startOz 
+public String startOz(String str) {
+  char[] arrStr = str.toCharArray();
+  if(str.length() == 1 && arrStr[0] == 'o'){
+    return str.substring(0,1);
+  }
+  else if (str.length() > 1){
+    if (arrStr[0] == 'o' && arrStr[1] == 'z'){
+      return str.substring(0,2);
+    }
+    else if (arrStr[0] == 'o'){
+      return str.substring(0,1);
+    }
+    else if (arrStr[1] == 'z'){
+      return str.substring(1,2);
+    }
+    else return "";
+  }
+  else return "";
+}
+
+
+//Warmup-1 > intMax 
+public int intMax(int a, int b, int c) {
+  if (a > b && a > c){
+    return a;
+  }
+  else if (b > a && b > c){
+    return b;
+  }
+  else return c;
+}
+
+//Warmup-1 > close10 
+public int close10(int a, int b) {
+  int x = Math.abs(10 - a);
+  int y = Math.abs(10 - b);
+  if (x != y){
+    if (x < y){
+      return a;
+    }
+    else return b;
+  }
+  else return 0;
+}
+
+//Warmup-1 > in3050 
+public boolean in3050(int a, int b) {
+  if (a >= 30 && a <= 40 && b >= 30 && b <= 40 ){
+    return true;
+  }
+  else if (a >= 40 && a <= 50 && b >= 40 && b <= 50 ){
+    return true;
+  }
+  else return false;
+}
+
+
+//Warmup-1 > max1020 
+public int max1020(int a, int b) {
+  if ((a >= 10 && a <= 20) && (b >= 10 && b <= 20)){
+    if (a > b){
+      return a;
+    }
+    else return b;
+  }
+  else if (a >= 10 && a <= 20){
+    return a;
+  }
+  else if (b >= 10 && b <= 20){
+    return b;
+  }
+  else return 0;
+}
+
+//Warmup-1 > stringE 
+public boolean stringE(String str) {
+  char checkE = 'e';
+  byte countE = 0;
+  char[] arrayFromStr = str.toCharArray();
+  for (int i = 0; i < arrayFromStr.length; i++) {
+    if (arrayFromStr[i] == checkE){
+      countE++;
+      }
+    }
+  if (countE > 0 && countE <=3){
+    return true;
+  }
+  else return false;
+}
+
+
+//Warmup-1 > lastDigit 
+public boolean lastDigit(int a, int b) {
+  if (a%10 == b%10){
+    return true;
+  }
+  else return false;
+}
+
+
+//Warmup-1 > endUp 
+public String endUp(String str) {
+  if (str.length() > 3){
+    String subStr = str.substring(str.length()-3);
+    String subStr2 = str.substring(0, str.length()-3);
+    return subStr2 + subStr.toUpperCase();
+  }
+  else return str.toUpperCase();
+}
+
+//Warmup-1 > everyNth 
+public String everyNth(String str, int n) {
+  char[] arrayFromString = str.toCharArray();
+  String nStr = "";
+  for(int i = 0; i<arrayFromString.length; i++){
+    if (i%n == 0){
+      nStr += arrayFromString[i];
+    }
+  }
+  return nStr;
+}
+

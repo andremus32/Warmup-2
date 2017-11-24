@@ -1,0 +1,133 @@
+//Warmup-2 > stringTimes 
+public String stringTimes(String str, int n) {
+  String nStr = "";
+  for(int i = 0; i < n; i++){
+    nStr += str;
+  }
+  return nStr;
+}
+
+//Warmup-2 > frontTimes 
+public String frontTimes(String str, int n) {
+  String result = "";
+  if(str.length() < 3){
+    for(int i = 0; i < n; i++){
+      result += str;
+    }
+  }
+  else {
+    str = str.substring(0,3);
+    for(int i = 0; i < n; i++){
+      result += str;
+    }
+  }
+  return result;
+}
+
+//Warmup-2 > countXX 
+int countXX(String str) {
+  int count = 0;
+  if (str.length() > 1){
+  char[] arrStr = str.toCharArray();
+    for(int i = 0; i < arrStr.length - 1; i++){
+    if (arrStr[i] == 'x' && arrStr[i+1] == 'x'){
+      count++;
+    }
+    }
+  }
+  return count;
+}
+
+
+//Warmup-2 > doubleX 
+boolean doubleX(String str) {
+  boolean check = false;
+  char[] arrStr = str.toCharArray();
+  
+  if (arrStr.length > 1){
+    for (int i = 0; i < arrStr.length-1; i++){
+      if (arrStr[i] == 'x'){
+        if (arrStr[i+1] == 'x'){
+          check = true;
+        }
+        break;
+      }
+    }
+  }
+  return check;
+}
+
+//Warmup-2 > stringBits 
+public String stringBits(String str) {
+  String result = "";
+  if (str.length() > 1){
+    for(int i = 0; i < str.length(); i+=2){
+      result += str.substring(i, i+1);
+    }
+  }
+  return result;
+}
+
+//Warmup-2 > stringSplosion
+public String stringSplosion(String str) {
+  String result = "";
+  if (str.length() > 0){
+    for(int i = 1; i <= str.length(); i++){
+    result += str.substring(0, i);
+    }
+  }
+  return result;
+}
+
+//Warmup-2 > last2 
+public int last2(String str) {
+  char[] arrStr = str.toCharArray();
+  int count = 0;
+  if (str.length() > 3){
+    for (int i = 0; i < arrStr.length-2; i++){
+      if(arrStr[i] == arrStr[arrStr.length-2] && arrStr[i+1] == arrStr[arrStr.length-1]){
+        count++;
+      }
+    }
+    return count;
+  }
+  else return count;
+}
+
+//Warmup-2 > arrayCount9 
+public int arrayCount9(int[] nums) {
+  int count = 0;
+  for(int i = 0; i < nums.length; i++){
+    if (nums[i] == 9){
+      count++;
+    }
+  }
+  return count;
+}
+
+//Warmup-2 > arrayFront9 
+public boolean arrayFront9(int[] nums) {
+  boolean check9 = false;
+  if (nums.length > 3){
+    for(int i = 0; i < 4; i++){
+      if(nums[i] == 9){
+        check9 = true;
+      }
+    }
+    return check9;
+  }
+  else {
+    for(int i = 0; i < nums.length; i++){
+      if(nums[i] == 9){
+        check9 = true;
+      }
+    }
+    return check9;
+  }
+}
+
+
+
+
+
+

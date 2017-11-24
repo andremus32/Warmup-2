@@ -1,0 +1,10 @@
+//Warmup-2 > stringBits 
+public String stringBits(String str) {
+  String result = "";
+  if (str.length() > 1){
+    for(int i = 0; i < str.length(); i+=2){
+      result += str.substring(i, i+1);
+    }
+  }
+  return result;
+}

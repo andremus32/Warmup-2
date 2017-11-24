@@ -1,0 +1,20 @@
+//Warmup-2 > arrayFront9 
+public boolean arrayFront9(int[] nums) {
+  boolean check9 = false;
+  if (nums.length > 3){
+    for(int i = 0; i < 4; i++){
+      if(nums[i] == 9){
+        check9 = true;
+      }
+    }
+    return check9;
+  }
+  else {
+    for(int i = 0; i < nums.length; i++){
+      if(nums[i] == 9){
+        check9 = true;
+      }
+    }
+    return check9;
+  }
+}

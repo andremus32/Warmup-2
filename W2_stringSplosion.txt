@@ -1,0 +1,10 @@
+//Warmup-2 > stringSplosion
+public String stringSplosion(String str) {
+  String result = "";
+  if (str.length() > 0){
+    for(int i = 1; i <= str.length(); i++){
+    result += str.substring(0, i);
+    }
+  }
+  return result;
+}

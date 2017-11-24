@@ -1,0 +1,17 @@
+//Warmup-2 > doubleX 
+boolean doubleX(String str) {
+  boolean check = false;
+  char[] arrStr = str.toCharArray();
+  
+  if (arrStr.length > 1){
+    for (int i = 0; i < arrStr.length-1; i++){
+      if (arrStr[i] == 'x'){
+        if (arrStr[i+1] == 'x'){
+          check = true;
+        }
+        break;
+      }
+    }
+  }
+  return check;
+}
