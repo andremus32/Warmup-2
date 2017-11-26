@@ -1,0 +1,19 @@
+//Warmup-2 > stringX
+public String stringX(String str) {
+  
+  if (str.length() > 2){
+    if (str.charAt(0) == 'x' && str.charAt(str.length()-1) == 'x'){
+      str = "x" + str.replace("x", "") + "x";
+    }
+    else if (str.charAt(0) == 'x'){
+      str = "x" + str.replace("x", "");
+    }
+    else if (str.charAt(str.length()-1) == 'x'){
+      str = str.replace("x", "") + "x";
+    }
+    else {
+      str = str.replace("x", "");
+    }
+  }
+return str;    
+}

@@ -1,0 +1,16 @@
+//Warmup-2 > altPairs 
+public String altPairs(String str) {
+  String nStr = "";
+  if(str.length() > 1){
+    for (int i = 0; i < str.length(); i+=4){
+      if (str.substring(i).length() < 2){
+        nStr += str.substring(i);
+      }
+      else {
+        nStr += str.substring(i, i+2);
+      }
+    }
+  }
+  else nStr = str;
+  return nStr;
+}
